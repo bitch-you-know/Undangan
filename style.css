@@ -212,6 +212,7 @@ body {
 }
 .timeLine {
     list-style: none;
+    
     padding-top: 1.4rem 0;
     margin-top: 1rem;
     position: relative;
@@ -223,7 +224,7 @@ body {
     bottom:0;
     position: absolute;
     width: 1px;
-    background-color: #ccc;
+    background-color: #000000;
     left: 50%;
 
 }
@@ -242,57 +243,36 @@ body {
     clear: both;
 }
 
-
-.timeLine li .timeLine-image {
+.timeLine li .timeLine-image{
     width: 160px;
     height: 160px;
-    background-color: #ccc;
+
     position: absolute;
     left:50%;
-    transform:translateX(-50%) ;
+
     border-radius: 50%;
-    background-size:cover;
-    background-position: center;
+    transform: translateX(-50%);
     background-repeat: no-repeat;
 }
 
-
 .timeLine li .timeLine-panel {
-    width: 40%;
-    float: left;
-    border: 1px solid #ccc;
-    padding:  2rem;
-    position: relative;
-    border-radius:8px;
-    
+   width: 40%;
+   float: left;
+   border: 1px solid #c52121;
+   padding: 2rem;
+   position: relative;
+   border-radius: 8px;
+
 }
 
 .timeLine li .timeLine-panel ::before {
-   content: '';
-   display: inline-block;
-   position: absolute;
-   width: 30px; 
-   height: 30px;
-   background-color: #d80000;
-   border: 1px solid;
-   top: 70px;
-   right: -15px;
-   transform: rotate(42deg);
-   z-index: -1;
-}
-/* dekstop */
-@media (max-width:1200px) {
-    .home .heart {
-        transform: translate(-50%) translateY(45px);
-
-    }
-
-    .simply-countdown.simply-section {
-        padding: 50px;
-        margin: 4px;
-        font-size: 1.4rem;
-        width: 52px;
-    }
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #c52121;
+    
 }
 
 @media (max-width:991px) {
