@@ -61,15 +61,17 @@ body {
 }
 
 .info .card {
-     background-color: rgba(255, 255, 255, 0.3) !important;
-     color: white !important;
-     border: 1px solid #999;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    border: 1px solid #999;
 }
+
 .info .card-header {
     border: 1px solid #999;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
+
 .info .card-footer {
     border-top: 1px solid #999;
     font-size: 1rem;
@@ -78,18 +80,7 @@ body {
 
 
 
-/* Media Query*/
 
-/* dekstop */
-@media (max-width:992px) {
-    html {
-        font-size: 75%;
-    }
-
-    .simply-countdown>.simply-section {
-        padding: 70px;
-    }
-}
 
 .mynavbar {
     background-color: rgba(255, 255, 255, 0.3) !important;
@@ -180,7 +171,9 @@ body {
     padding-bottom: 5rem;
 }
 
-.info h2, .story h2{
+.info h2,
+.story h2,
+.gallery h2 {
     color: var(--pink);
     font-family: "sacramento";
     font-size: 5rem;
@@ -193,86 +186,142 @@ body {
 
 .info .description {
     font-size: 1rem;
-    font-weight:300;
+    font-weight: 300;
 }
 
-.story {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+.story ,.gallery {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
-.story span{
+
+.story span , .gallery span {
     text-transform: uppercase;
     color: #666;
     font-size: 0.9rem;
-    margin-bottom: 1rem ;
+    margin-bottom: 1rem;
 }
-.story p {
+
+.story p , .gallery p {
     font-size: 1rem;
     font-weight: 300;
 }
+
 .timeLine {
     list-style: none;
-    
     padding-top: 1.4rem 0;
     margin-top: 1rem;
     position: relative;
+    
 }
 
-.timeLine ::before{
+.timeLine::before {
     content: '';
-    top:0;
-    bottom:0;
+    top: 0;
+    bottom: 0;
     position: absolute;
-    width: 1px;
-    background-color: #000000;
+    width: 2px;
+    background-color: #ccc;
     left: 50%;
-
 }
-.timeLine li{
+
+.timeLine li {
     margin-bottom: 1.5rem;
     position: relative;
 }
 
-.timeLine li ::before,
-.timeLine li ::after{
+.timeLine li::before,
+.timeLine li::after {
     content: '';
     display: table;
 }
 
-.timeLine li ::after{
+.timeLine li::after {
     clear: both;
 }
 
-.timeLine li .timeLine-image{
+.timeLine li .timeLine-image {
     width: 160px;
     height: 160px;
-
+    background-color: #ccc;
     position: absolute;
-    left:50%;
-
+    left: 50%;
     border-radius: 50%;
     transform: translateX(-50%);
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
 .timeLine li .timeLine-panel {
-   width: 40%;
-   float: left;
-   border: 1px solid #c52121;
-   padding: 2rem;
-   position: relative;
-   border-radius: 8px;
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
 
 }
 
-.timeLine li .timeLine-panel ::before {
+.timeLine li .timeLine-panel::before {
     content: '';
     display: inline-block;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #c52121;
-    
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent ;
+  top: 80px;
+  right: -15px;
+
+}
+
+.timeLine li  .timeLine-panel::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #ffffff;
+    border-right: 0 solid #ffffff;
+    border-bottom: 14px solid transparent ;
+    top: 81px;
+    right: -13px;
+
+}
+
+.timeLine li.timeLine-inverted .timeLine-panel {
+    float: right;
+}
+
+.timeLine li.timeLine-inverted .timeLine-panel::before {
+
+    border-left-width: 0;
+    border-right-width:15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeLine li.timeLine-inverted .timeLine-panel::after {
+
+    border-left-width: 0;
+    border-right-width:14px;
+    left: -14px;
+    right: auto;
+}
+
+
+.gallery {
+    background-color:#f5f5f5 ;
+}
+
+/* Media Query*/
+
+/* dekstop */
+@media (max-width:992px) {
+    html {
+        font-size: 75%;
+    }
+
 }
 
 @media (max-width:991px) {
@@ -287,7 +336,11 @@ body {
     html {
         font-size: 80%;
     }
-
+    .simply-countdown>.simply-section {
+        padding: 45px;
+        margin: 3px;
+    }
+    .t
     .simply-countdown>.simply-section {
 
         margin: 4px;
@@ -305,6 +358,45 @@ body {
         display: none;
     }
 
+    .timeLine::before {
+        left: 60px;
+    }
+    .timeLine li .timeLine-image {
+        left: 15px;
+        margin-left: 45px; 
+        top: 16px;
+        width: 16rem;
+        height: 16rem;
+        margin-left: 40px; 
+    }
+
+    .timeLine li .timeLine-panel {
+        width:calc((100%-200px));
+        float: right;
+    }
+
+    .timeLine li .timeLine-panel::before {
+        border-left-width:0;
+        border-right-width:15px;
+        left: -15px;
+        right: auto;
+
+    }
+    .timeLine li .timeLine-panel::after {
+        border-left-width:0;
+        border-right-width:14px;
+        left: -13px;
+        right: auto;
+
+    }
+    .timeLine::before {
+        display: none;
+    }
+    .timeLine li .timeLine-panel {
+        width: 50%;
+    }
+
+
 }
 
 /* mobile Phone */
@@ -314,7 +406,22 @@ body {
     }
 
     .simply-countdown>.simply-section {
-        padding: 45px;
+        padding: 40px;
         margin: 3px;
+    
+    }
+    .timeLine li .timeLine-image {
+       width: 16rem;
+       height: 16rem;
+       margin-left: 7rem; 
+    }
+    .timeLine::before {
+        display: none;
+    }
+    .timeLine li .timeLine-panel {
+        width: 50%;
+        
     }
 }
+
+

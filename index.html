@@ -34,7 +34,7 @@
             <div class="simply-countdown">
 
             </div>
-            <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
         </main>
     </section>
     <!--NAVIGASI BAR-->
@@ -177,48 +177,144 @@
                 </div>
             </div>
         </div>
-        <!-- INI BAGIAN STORY -->
     </section>
-    <div class="story" id="story">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-10 text-center">
-                    <span>Bagaimana Cintakami Bersemi</span>
-                    <h2>Cerita Kami</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo consequatur officiis quidem facere
-                        temporibus in. Eligendi dolores asperiores distinctio, voluptatibus commodi minima harum
-                        possimus quae sunt mollitia impedit explicabo animi?</p>
+    <!-- INI BAGIAN STORY -->
+    <section id="story" class="story">
+        <div class="story" id="story">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10 text-center">
+                        <span>Bagaimana Cintakami Bersemi</span>
+                        <h2>Cerita Kami</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo consequatur officiis quidem
+                            facere
+                            temporibus in. Eligendi dolores asperiores distinctio, voluptatibus commodi minima harum
+                            possimus quae sunt mollitia impedit explicabo animi?</p>
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="timeLine">
+                            <li>
+                                <div class="timeLine-image" style="background-image:url(./assets/gambar1.jfif);"></div>
+                                <div class="timeLine-panel">
+                                    <div class="timeLine-heading">
+                                        <h3>Pertama Bertemu</h3>
+                                        <span>1 juni 2000</span>
+                                    </div>
+                                    <div class="timeLine-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae,
+                                        </p>
+                                    </div>
 
-            <div class="row">
-                <div class="col">
-                    <ul class="timeLine">
-                        <li>
-                            <div class="timeLine-image" style="background-image:url(/assets/gambar1.jfif) ;"></div>
-                            <div class="timeLine-panel">
-                                <div class="timeLine-heading">
-                                    <h3>Pertama Bertemu</h3>|
-                                    <span>1 juni 2000</span>
+
                                 </div>
-                                <div class="timeLine-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae, minus, labore fugit molestiae architecto nostrum odio error soluta obcaecati voluptatem! Pariatur modi reiciendis fugit architecto. Earum praesentium inventore ab.</p>
+                            </li>
+
+                            <li class="timeLine-inverted">
+                                <div class="timeLine-image"
+                                    style="background-image:url(https://picsum.photos/300/300);"></div>
+                                <div class="timeLine-panel">
+                                    <div class="timeLine-heading">
+                                        <h3>mulai serius</h3>
+                                        <span>1 januari 2025</span>
+                                    </div>
+                                    <div class="timeLine-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae,
+                                        </p>
+                                    </div>
+
+
                                 </div>
+                            </li>
+
+                            <li>
+                                <div class="timeLine-image"
+                                    style="background-image:url(https://picsum.photos/301/300);"></div>
+                                <div class="timeLine-panel">
+                                    <div class="timeLine-heading">
+                                        <h3>Tunangan</h3>
+                                        <span>1 januari 2025</span>
+                                    </div>
+                                    <div class="timeLine-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, recusandae,
+                                        </p>
+                                    </div>
 
 
-                            </div>
-                        </li>
-
-                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- INI BAGIAN GALERY -->
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Memory kisah kami</span>
+                    <h2>Gallery foto</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo consequatur officiis quidem facere
+                    </p>
+                </div>
+
+            </div>
+            <div class="row row-cols-md-3 row-cols-sm-2 row-cols-2">
+                <div class="col mt-3">
+                    <a href="https://picsum.photos/id/1/1200/768" data-toggle="lightbox"
+                        data-caption="This describes the image" data-gallery="example-gallery">
+                        <img src="https://picsum.photos/id/1/300/300" alt="ABI dan cw" class="img-fluid w-100 rounded">
+                    </a>
+
+                </div>
+                <div class="col mt-3">
+                    <a href="https://picsum.photos/id/87/1200/768" data-toggle="lightbox"
+                        data-caption="This describes the image" data-gallery="example-gallery">
+                        <img src="https://picsum.photos/id/87/300/300" alt="ABI dan cw" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="https://picsum.photos/id/99/1200/768" data-toggle="lightbox"
+                        data-caption="This describes the image" data-gallery="example-gallery">
+                        <img src="https://picsum.photos/id/99/300/300" alt="ABI dan cw" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="https://picsum.photos/id/12/1200/768" data-toggle="lightbox"
+                        data-caption="This describes the image" data-gallery="example-gallery">
+                        <img src="https://picsum.photos/id/12/300/300" alt="ABI dan cw" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="https://picsum.photos/id/46/1200/768" data-toggle="lightbox"
+                        data-caption="This describes the image" data-gallery="example-gallery">
+                        <img src="https://picsum.photos/id/46/300/300" alt="ABI dan cw" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+                <div class="col mt-3">
+                    <a href="https://picsum.photos/id/40/1200/768" data-toggle="lightbox"
+                        data-caption="This describes the image" data-gallery="example-gallery">
+                        <img src="https://picsum.photos/id/40/300/300" alt="ABI dan cw" class="img-fluid w-100 rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+
     <script>
         simplyCountdown('.simply-countdown', {
             year: 2024, // required
@@ -232,6 +328,26 @@
                 seconds: { singular: 'detik', plural: 'detik' }
             },
         })
+    </script>
+
+    <script>
+        const rootElement = document.querySelector(":root");
+        function disableScroll() {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function () {
+                window.scrollTo(scrollTop, scrollLeft)
+            }
+
+            rootElement.style.scrollBehavior = 'auto';
+        }
+
+        function enableScroll() {
+            window.onscroll = function () { }
+            rootElement.style.scrollBehavior = 'smooth';
+        }
+        disableScroll();
     </script>
 </body>
 
